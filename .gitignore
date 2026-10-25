@@ -1,0 +1,21 @@
+.superpowers/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+*.db
+*.db-wal
+*.db-shm
+
+# Local, owner-specific files
+service/seed/channels.txt
+*.env
+.env*
+build.env
+.venv/
+build/
+.gradle/
+local.properties
+*.apk
+*.jks
+*.keystore
+.DS_Store

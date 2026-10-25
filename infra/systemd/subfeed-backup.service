@@ -1,0 +1,20 @@
+# Nightly SQLite backup: `.backup` of the live DB to <saved dir>/_db/subfeed-YYYYMMDD.db,
+# keeping 14. Install at /etc/systemd/system/subfeed-backup.service.
+# Triggered by subfeed-backup.timer. Fails (and is retried next night) if the saved-videos
+# directory (SUBFEED_SAVED_DIR, default /srv/saved) is not a mount point.
+[Unit]
+Description=Subfeed nightly database backup to the NAS
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=subfeed
+Group=subfeed
+WorkingDirectory=/opt/subfeed/service
+EnvironmentFile=-/etc/subfeed/subfeed.env
+Environment=PATH=/opt/subfeed/venv/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=/opt/subfeed/venv/bin/python -m subfeed.backup
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full

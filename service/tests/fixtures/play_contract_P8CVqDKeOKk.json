@@ -1,0 +1,21 @@
+{
+ "video_url": "https://rr5---sn-hp57knk7.googlevideo.com/videoplayback?REDACTED",
+ "audio_url": "https://rr5---sn-hp57knk7.googlevideo.com/videoplayback?REDACTED",
+ "headers": {
+  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+  "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "Accept-Language": "en-us,en;q=0.5",
+  "Sec-Fetch-Mode": "navigate"
+ },
+ "video_mime": "video/mp4",
+ "audio_mime": "audio/mp4",
+ "height": 1080,
+ "duration_s": 1068,
+ "video_codec": "avc1.640028",
+ "audio_codec": "mp4a.40.2",
+ "video_format_id": "137",
+ "audio_format_id": "140-20",
+ "title": "Bill Gates\u2019 Daughter is in Trouble",
+ "channel": "ColdFusion",
+ "channel_id": "UC4QZ_LsYcvcq7qOsOhpAX4A"
+}

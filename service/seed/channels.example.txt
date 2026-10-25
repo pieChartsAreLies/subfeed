@@ -1,0 +1,8 @@
+# Example seed channels. Copy to channels.txt (git-ignored) and edit, or skip seeding entirely:
+# once you sign in with Google, Subfeed syncs your real subscriptions and no seed is needed.
+# Format: <UC channel id> <@handle or -> <name>   [# comment]
+# Import with: subfeed seed [--file path]   (defaults to channels.txt, else this file)
+UCsBjURrPoezykLs9EqgamOA @Fireship Fireship
+UC4QZ_LsYcvcq7qOsOhpAX4A @ColdFusion ColdFusion
+UC-9b7aDP6ZN0coj9-xFnrtw @astrumspace Astrum
+UCshObcm-nLhbu8MY50EZ5Ng @bennjordan Benn Jordan

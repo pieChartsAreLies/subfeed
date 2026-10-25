@@ -1,0 +1,12 @@
+# Install at /etc/systemd/system/subfeed-backup.timer.
+# 03:30 in the server's clock; change it if it collides with your other backup jobs.
+[Unit]
+Description=Run the Subfeed database backup nightly
+
+[Timer]
+OnCalendar=*-*-* 03:30:00
+RandomizedDelaySec=10min
+Persistent=true
+
+[Install]
+WantedBy=timers.target

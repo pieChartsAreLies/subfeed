@@ -1,0 +1,137 @@
+{
+ "source": "https://www.youtube.com/channel/UCLA_DiR1FfKNvjuUpBHmylQ/streams",
+ "entries": [
+  {
+   "id": "hv867HnY4j4",
+   "title": "U.S. Spacewalk 100",
+   "duration": null,
+   "live_status": "is_upcoming",
+   "availability": null,
+   "timestamp": null,
+   "release_timestamp": null,
+   "url": "https://www.youtube.com/watch?v=hv867HnY4j4",
+   "ie_key": "Youtube"
+  },
+  {
+   "id": "ROboUHfPUrU",
+   "title": "Live High-Definition Views from the International Space Station (Official NASA Stream)",
+   "duration": null,
+   "live_status": "is_live",
+   "availability": null,
+   "timestamp": null,
+   "release_timestamp": null,
+   "url": "https://www.youtube.com/watch?v=ROboUHfPUrU",
+   "ie_key": "Youtube"
+  },
+  {
+   "id": "M3HKLzjvKPc",
+   "title": "Live Video from the International Space Station (Official NASA Stream)",
+   "duration": null,
+   "live_status": "is_live",
+   "availability": null,
+   "timestamp": null,
+   "release_timestamp": null,
+   "url": "https://www.youtube.com/watch?v=M3HKLzjvKPc",
+   "ie_key": "Youtube"
+  },
+  {
+   "id": "pAKqJxuxDgk",
+   "title": "Artemis Acceleration (Oct. 23, 2026)",
+   "duration": 7515,
+   "live_status": "was_live",
+   "availability": null,
+   "timestamp": null,
+   "release_timestamp": null,
+   "url": "https://www.youtube.com/watch?v=pAKqJxuxDgk",
+   "ie_key": "Youtube"
+  },
+  {
+   "id": "UleiRdWFG7o",
+   "title": "U.S. Spacewalk Preview News Conference (Oct. 20, 2026)",
+   "duration": 1690,
+   "live_status": "was_live",
+   "availability": null,
+   "timestamp": null,
+   "release_timestamp": null,
+   "url": "https://www.youtube.com/watch?v=UleiRdWFG7o",
+   "ie_key": "Youtube"
+  },
+  {
+   "id": "ivng4U5xeYM",
+   "title": "NASA's SpaceX Crew-12 Postflight News Conference (Oct. 15, 2026)",
+   "duration": 2396,
+   "live_status": "was_live",
+   "availability": null,
+   "timestamp": null,
+   "release_timestamp": null,
+   "url": "https://www.youtube.com/watch?v=ivng4U5xeYM",
+   "ie_key": "Youtube"
+  },
+  {
+   "id": "-jPQmjMWy9I",
+   "title": "NASA's SpaceX 35th Commercial Resupply Services Rendezvous and Docking",
+   "duration": 6146,
+   "live_status": "was_live",
+   "availability": null,
+   "timestamp": null,
+   "release_timestamp": null,
+   "url": "https://www.youtube.com/watch?v=-jPQmjMWy9I",
+   "ie_key": "Youtube"
+  },
+  {
+   "id": "f8FE2R7esZ0",
+   "title": "NASA's SpaceX 35th Commercial Resupply Services Launch",
+   "duration": 2957,
+   "live_status": "was_live",
+   "availability": null,
+   "timestamp": null,
+   "release_timestamp": null,
+   "url": "https://www.youtube.com/watch?v=f8FE2R7esZ0",
+   "ie_key": "Youtube"
+  },
+  {
+   "id": "IoL51xLkMSY",
+   "title": "NASA's Northrop Grumman Commercial Resupply Services 24 Departure",
+   "duration": 2527,
+   "live_status": "was_live",
+   "availability": null,
+   "timestamp": null,
+   "release_timestamp": null,
+   "url": "https://www.youtube.com/watch?v=IoL51xLkMSY",
+   "ie_key": "Youtube"
+  },
+  {
+   "id": "x6p9Ri0DlNE",
+   "title": "NASA's SpaceX Crew-12 Re-Entry & Splashdown",
+   "duration": 8347,
+   "live_status": "was_live",
+   "availability": null,
+   "timestamp": null,
+   "release_timestamp": null,
+   "url": "https://www.youtube.com/watch?v=x6p9Ri0DlNE",
+   "ie_key": "Youtube"
+  },
+  {
+   "id": "dGSqblvgLIE",
+   "title": "NASA's SpaceX Crew-12 Undocking",
+   "duration": 2714,
+   "live_status": "was_live",
+   "availability": null,
+   "timestamp": null,
+   "release_timestamp": null,
+   "url": "https://www.youtube.com/watch?v=dGSqblvgLIE",
+   "ie_key": "Youtube"
+  },
+  {
+   "id": "JB5HKi8Pxqs",
+   "title": "NASA's SpaceX Crew-12 Hatch Close",
+   "duration": 2324,
+   "live_status": "was_live",
+   "availability": null,
+   "timestamp": null,
+   "release_timestamp": null,
+   "url": "https://www.youtube.com/watch?v=JB5HKi8Pxqs",
+   "ie_key": "Youtube"
+  }
+ ]
+}

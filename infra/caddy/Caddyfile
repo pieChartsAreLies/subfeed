@@ -1,0 +1,23 @@
+# Subfeed: TLS front for the service. Template: replace YOUR_SERVER_IP with the server's
+# LAN IP (the same address you give the TV app as SUBFEED_API_BASE) and subfeed.lan with a
+# local hostname if you use one (or delete that name). Install at /etc/caddy/Caddyfile.
+#
+# `tls internal` uses Caddy's own local CA. The TV app trusts only that CA's root, which you
+# copy off the server and give to the build as SUBFEED_CA_PEM:
+#   /var/lib/caddy/.local/share/caddy/pki/authorities/local/root.crt
+# The root is valid for 10 years; intermediates and leaf certs renew automatically.
+# Rebuilding the server creates a NEW root, so the TV app has to be rebuilt with the new
+# root.crt unless /var/lib/caddy is restored from backup.
+{
+	# Caddy runs as the unprivileged `caddy` user and cannot (and should not)
+	# write the system trust store.
+	skip_install_trust
+	# Clients that connect by IP send no SNI; serve the IP certificate.
+	default_sni YOUR_SERVER_IP
+}
+
+https://YOUR_SERVER_IP, https://subfeed.lan {
+	tls internal
+	# No `encode`: /proxy and /media serve byte ranges; keep them untouched.
+	reverse_proxy 127.0.0.1:8000
+}

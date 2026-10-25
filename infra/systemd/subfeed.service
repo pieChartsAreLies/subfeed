@@ -1,0 +1,36 @@
+# Subfeed API service (FastAPI under uvicorn). Install at
+# /etc/systemd/system/subfeed.service. Caddy fronts it on :443.
+#
+# Layout on the server:
+#   /opt/subfeed/service  service code (the repo's service/ dir, pip install -e into the venv)
+#   /opt/subfeed/venv     Python venv (yt-dlp, fastapi, uvicorn, ...)
+#   /var/lib/subfeed      SQLite database (local disk)
+#   /srv/saved            mount point for saved videos (optional; may be absent, the service copes)
+#   /etc/subfeed/subfeed.env  secrets (root:subfeed 0640, never in the repo)
+[Unit]
+Description=Subfeed API (uvicorn subfeed.api:app)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=subfeed
+Group=subfeed
+WorkingDirectory=/opt/subfeed/service
+EnvironmentFile=-/etc/subfeed/subfeed.env
+# /usr/local/bin holds deno, the JS runtime yt-dlp needs for YouTube.
+Environment=PATH=/opt/subfeed/venv/bin:/usr/local/bin:/usr/bin:/bin
+Environment=PYTHONUNBUFFERED=1
+Environment=SUBFEED_DB=/var/lib/subfeed/subfeed.db
+Environment=SUBFEED_SCHEDULER=1
+ExecStart=/opt/subfeed/venv/bin/uvicorn subfeed.api:app --host 127.0.0.1 --port 8000 --app-dir /opt/subfeed/service --proxy-headers --forwarded-allow-ips 127.0.0.1
+Restart=on-failure
+RestartSec=5
+# Light hardening.
+# The venv stays writable so you can upgrade yt-dlp in place (pip install -U yt-dlp).
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+
+[Install]
+WantedBy=multi-user.target
